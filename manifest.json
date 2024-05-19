@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Spoiler Blocker",
+    "version": "1.0",
+    "description": "Blocks spoilers on web pages.",
+    "icons": {
+      "1": "icons/SpoilerShield.png"
+    },
+    "content_security_policy": "script-src 'self'; object-src 'self';",
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "scripts": ["dist/background.bundle.js"]
+    },
+    "browser_action": {
+      "default_icon": "icons/SpoilerShield.png",
+      "default_popup": "src/static/views/popup.html",
+      "default_title": "SpoilerShield"
+    }
+
+  }
+
+  
+  
