@@ -1,9 +1,12 @@
+//Class for the horizontal date picker
+
 class HorizontalDatePicker {
     constructor() {
         this.startDate = new Date(); 
         this.startDate.setHours(0, 0, 0, 0);
     }
 
+    //Creates html for date element
     generateDateElement(date) {
         const dayInitial = date.toLocaleString('default', { weekday: 'short' })[0];
         const dayDate = date.getDate();
@@ -19,6 +22,7 @@ class HorizontalDatePicker {
         `;
     }
 
+    //Creates dates
     generateDates() {
         const dateContainer = document.getElementById('days');
         dateContainer.innerHTML = '';
@@ -51,9 +55,7 @@ class HorizontalDatePicker {
         this.addEventListeners();
     }
     
-    
-    
-
+    //Adds eventlisteners in order to retrieve dates game schedule
     addEventListeners() {
         const gameScheduleCreator = new GameScheduleCreator();
         document.querySelectorAll('.day-div').forEach(dayDiv => {
@@ -98,6 +100,7 @@ class HorizontalDatePicker {
         });
     }
 
+    //Updates current active date
     updateActiveDate(dateStr) {
         const currentlyActiveDate = document.querySelector('.day-div .selected-date.active');
         if (currentlyActiveDate) {
@@ -133,6 +136,7 @@ class HorizontalDatePicker {
         this.updateMonthYear();
     }
     
+    //Updates month and year header
     updateMonthYear() {
         let monthYearLabel = document.getElementById('month-year').querySelector('p');
         const activeWeekDayDivs = document.querySelectorAll('.week-div.active .day-div');
@@ -154,7 +158,7 @@ class HorizontalDatePicker {
         monthYearLabel.textContent = `${monthLabel} ${yearLabel}`;
     }
     
-
+    //Retrieves the currently active date in date picker
     getActiveDate() {
         const activeDayDiv = document.querySelector('.day-div .selected-date.active');
         if (activeDayDiv) {
