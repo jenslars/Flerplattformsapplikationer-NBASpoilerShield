@@ -1,10 +1,10 @@
 /*Class to fetch data from NBA-API*/
 
-import DataSplitter from './data-splitter';
+import DataSplitter from '../modules/data-splitter';
 import DBHandler from '../modules/db-handler';
 
 
-class DataFetcher{
+class NBADataFetcher{
     constructor(){
     this.key = '98d977fc18mshe5acc90839bae9fp196b9bjsn1a0e87e7c524'
     this.host = 'api-nba-v1.p.rapidapi.com'
@@ -104,4 +104,4 @@ class DataFetcher{
 
 }    
 
-export default DataFetcher;
+export default NBADataFetcher;

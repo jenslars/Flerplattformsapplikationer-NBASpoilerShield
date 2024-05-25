@@ -2,8 +2,9 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    app: './src/app/app.js',
-    background: './src/app/background.js',
+    popup: './src/scripts/frontend/popupScript.js',
+    background: './src/background.js',
+    gamefeed: './src/scripts/classes/gamefeed.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
