@@ -1,10 +1,15 @@
 # Flerplattformsapplikationer-NBASpoilerShield
  Repository for school project. Firefox extension that blocks potential spoilers for NBA games on YouTube.com.
 
+# Requirements to run SpoilerShield
+1. Download and install Node.js. Follow the guide found at https://nodejs.org/en
+2. Download and install Firefox from https://www.mozilla.org/en-US/firefox/.
+3. Download and install Visual Studio Code from https://code.visualstudio.com/
+
 # Installation Guide
 1. Download the SpoilerShield repository from GitHub (https://github.com/jenslars/Flerplattformsapplikationer-NBASpoilerShield).
-2. Download Firefox from https://www.mozilla.org/en-US/firefox/.
-3. In the URL field, type "about:debugging".
+2. Open the repository in Visual Studio Code and go the the terminal, in the terminal type "npm run build" and press enter
+3. In Firefox, go to the URL field and type "about:debugging".
 4. Click on "This Firefox".
 5. Click on "Load Temporary Add-on".
 6. Select the manifest file in the downloaded folder.
@@ -22,7 +27,7 @@
 
 # Installation Guide Svenska
 1. Ladda ner SpoilerShield-repot via Github (https://github.com/jenslars/Flerplattformsapplikationer-NBASpoilerShield)
-2. Ladda ner Firefox på https://www.mozilla.org/sv-SE/firefox/
+2. Öppna SpoileShield-mappen i Visual Studio Code och gå till terminalen. I terminalen, skriv "npm run build" och tryck på enter.
 3. I URL-fältet skriv: about:debugging
 4. Klicka på Detta Firefox. 
 5. Klicka på Ladda temporärt tillägg
