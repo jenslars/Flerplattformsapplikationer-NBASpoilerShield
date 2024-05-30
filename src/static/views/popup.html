@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SpoilerShield - Popup</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@500&family=Lora&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="icons/SpoilerShield.png">
+        <link href="../styling/popup.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <main id="main" class="active">
+            <div id="date-section">
+                <header id="date-header">
+                    <div id="month-year">
+                        <p></p>
+                    </div>
+                    <div id="header-buttons">
+                        <button id="date-calendar-button"></button>
+                    </div>
+                </header>
+                <div id="day-section">
+                    <button id="previous-week-button"></button>
+                    <div id="days">
+                        <!-- <div class="dayDiv">
+                            <p class="day">S</p>
+                            <p class="dayDate">3</p>
+                            <div class="selectedDate"></div>
+                        </div>
+                        <div class="dayDiv">
+                            <p class="day">M</p>
+                            <p class="dayDate">4</p>
+                            <div class="selectedDate"></div>
+                        </div>
+                        <div class="dayDiv">
+                            <p class="day">T</p>
+                            <p class="dayDate">5</p>
+                            <div class="selectedDate"></div>
+                        </div>
+                        <div class="dayDiv">
+                            <p class="day">W</p>
+                            <p class="dayDate">6</p>
+                            <div class="selectedDate active"></div>
+                        </div>
+                        <div class="dayDiv">
+                            <p class="day">T</p>
+                            <p class="dayDate">7</p>
+                            <div class="selectedDate"></div>
+                        </div>
+                        <div class="dayDiv">
+                            <p class="day">F</p>
+                            <p class="dayDate">8</p>
+                            <div class="selectedDate"></div>
+                        </div>
+                        <div class="dayDiv">
+                            <p class="day">S</p>
+                            <p class="dayDate">9</p>
+                            <div class="selectedDate"></div>
+                        </div> -->
+                    </div>
+                    <button id="next-week-button"></button>
+                </div>
+                <div id="fetched-game-section">
+                    <!-- <div class="no-results-found">
+                        <p class="no-result-paragraph">No games are scheduled on this day</p>
+                    </div> -->
+                    <!-- <div class="blurred-game-div">
+                        <div class="game-div active">
+                            <div class="home-team">
+                                <img class="home-team-logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/f/f3/Hornets_de_Charlotte_logo.svg/1200px-Hornets_de_Charlotte_logo.svg.png">
+                                <p class="home-team-nickname">Hornets</p>
+                            </div>
+                            <div class="game-date-time">
+                                <p class="game-time">19:00</p>
+                                <p class="time-zone">GMT+1</p>
+                                <p class="game-date">03/03</p>
+                            </div>
+                            <div class="away-team">
+                                <img class="away-team-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Logo_of_the_Detroit_Pistons.png/300px-Logo_of_the_Detroit_Pistons.png">
+                                <p class="away-team-nickname">Pistons</p>
+                            </div>
+                            <div class="game-divider"></div>
+                            <div class="game-block-section">
+                                <p>Block</p>
+                            </div>
+                            <div class="game-blocked-overlay">Game Blocked</div>
+                        </div>
+                    </div>
+                    <div class="game-div">
+                        <div class="home-team">
+                            <img class="home-team-logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/Timberwolves_du_Minnesota_logo_2017.png/200px-Timberwolves_du_Minnesota_logo_2017.png">
+                            <p class="home-team-nickname">Timberwolves</p>
+                        </div>
+                        <div class="game-date-time">
+                            <p class="game-time">19:00</p>
+                            <p class="time-zone">GMT+1</p>
+                            <p class="game-date">03/03</p>
+                        </div>
+                        <div class="away-team">
+                            <img class="away-team-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Logo_of_the_Detroit_Pistons.png/300px-Logo_of_the_Detroit_Pistons.png">
+                            <p class="away-team-nickname">Pistons</p>
+                        </div>
+                        <div class="game-divider"></div>
+                        <div class="game-block-section">
+                            <p>Block</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div id="datepicker-test"></div>
+            <input type="date" id="date-input" style="position: absolute; visibility: hidden;">
+        </main>
+        <script src="../../../dist/app.bundle.js"></script>
+    </body> 
+</html>

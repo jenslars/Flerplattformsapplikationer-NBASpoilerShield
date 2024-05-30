@@ -1,0 +1,66 @@
+.ytd-rich-grid-media-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(75, 75 ,75, 0.5);
+    backdrop-filter: blur(20px);
+    filter: grayscale(100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+    text-wrap: nowrap;
+    flex-direction: column;
+
+}
+
+.ytd-rich-grid-media-spoiler-content{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.ytd-rich-grid-media-overlay.removed{
+    width: 0%;
+}
+
+.ytd-rich-grid-slim-media-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(75, 75 ,75, 0.5);
+    backdrop-filter: blur(20px);
+    filter: grayscale(100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+    text-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.ytd-rich-grid-slim-media-spoiler-content{
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.ytd-rich-grid-slim-media-overlay.removed{
+    width: 0%;
+}

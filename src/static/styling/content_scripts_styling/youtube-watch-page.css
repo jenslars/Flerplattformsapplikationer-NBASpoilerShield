@@ -1,0 +1,95 @@
+.ytd-compact-video-renderer-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: rgba(75, 75 ,75, 0.5);
+    backdrop-filter: blur(20px);
+    filter: grayscale(100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+    text-wrap: nowrap;
+    flex-direction: column;
+
+}
+
+.ytd-compact-video-renderer-spoiler-content{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.ytd-compact-video-renderer-overlay.removed{
+    width: 0%;
+}
+
+.ytd-reel-item-renderer-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(75, 75 ,75, 0.5);
+    backdrop-filter: blur(20px);
+    filter: grayscale(100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+    text-wrap: nowrap;
+    flex-direction: column;
+    width: 97%;
+    border-radius: 8px;
+    font-size: 8px;
+}
+
+.ytd-reel-item-renderer-spoiler-content{
+    font-size: 6px;
+    font-weight: normal;
+}
+
+.ytd-reel-item-renderer-overlay.removed{
+    width: 0%;
+}
+
+.ytp-ce-video-title-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(75, 75 ,75, 0.5);
+    backdrop-filter: blur(20px);
+    filter: grayscale(100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+    text-wrap: nowrap;
+    flex-direction: column;
+    width: 97%;
+    border-radius: 8px;
+    font-size: 8px;
+}
+
+.ytp-ce-video-title-spoiler-content{
+    font-size: 6px;
+    font-weight: normal;
+}
