@@ -17,7 +17,7 @@ class DBHandler {
                 if (!db.objectStoreNames.contains('fetched-games')) {
                     const fetchedGamesStore = db.createObjectStore('fetched-games', { keyPath: 'gameId' });
                     fetchedGamesStore.createIndex('gameDate', 'gameDate', { unique: false });
-                    fetchedGamesStore.createIndex('gameBlockedStatus', 'gameBlockedStatus', { unique: false });  // Create a new index
+                    fetchedGamesStore.createIndex('gameBlockedStatus', 'gameBlockedStatus', { unique: false });
                 }
             
                 if (!db.objectStoreNames.contains('blocked-games')) {

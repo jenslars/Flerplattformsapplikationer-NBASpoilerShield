@@ -2,9 +2,12 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    popup: './src/scripts/frontend/popupScript.js',
-    background: './src/background.js',
-    gamefeed: './src/scripts/classes/gamefeed.js',
+    app: './src/app/app.js',
+    background: './src/app/background.js',
+    gamefeed: './src/app/modules/game-schedule-feed.js',
+    blockSpoilersYoutubeHomePage: './src/app/content_scripts/block-spoilers-youtube-home-page.js',
+    blockSpoilersYoutubeWatchPage: './src/app/content_scripts/block-spoilers-youtube-watch-page.js',
+    blockSpoilersYoutubeSearchPage: './src/app/content_scripts/block-spoilers-youtube-search-page.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

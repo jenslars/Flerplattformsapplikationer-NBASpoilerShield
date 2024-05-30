@@ -1,25 +1,44 @@
 {
-    "manifest_version": 2,
-    "name": "Spoiler Blocker",
-    "version": "1.0",
-    "description": "Blocks spoilers on web pages.",
-    "icons": {
-      "1": "icons/SpoilerShield.png"
+  "manifest_version": 2,
+  "name": "Spoiler Blocker",
+  "version": "1.0",
+  "description": "Blocks spoilers on web pages.",
+  "icons": {
+    "1": "icons/SpoilerShield.png"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self';",
+  "permissions": [
+    "activeTab",
+    "https://timeapi.io/",
+    "https://www.youtube.com/*"
+  ],
+  "background": {
+    "scripts": ["dist/background.bundle.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/"],
+      "exclude_matches": ["*://*.youtube.com/*/*"],
+      "js": ["dist/blockSpoilersYoutubeHomePage.bundle.js"],
+      "css": ["src/static/styling/content_scripts_styling/youtube-home-page.css"]
     },
-    "content_security_policy": "script-src 'self'; object-src 'self';",
-    "permissions": [
-      "activeTab"
-    ],
-    "background": {
-      "scripts": ["dist/background.bundle.js"]
+    {
+      "matches": ["*://*.youtube.com/watch*"],
+      "js": ["dist/blockSpoilersYoutubeWatchPage.bundle.js"],
+      "css": ["src/static/styling/content_scripts_styling/youtube-watch-page.css"]
     },
-    "browser_action": {
-      "default_icon": "icons/SpoilerShield.png",
-      "default_popup": "src/static/views/popup.html",
-      "default_title": "SpoilerShield"
+    {
+      "matches": ["*://*.youtube.com/results*"],
+      "js": ["dist/blockSpoilersYoutubeSearchPage.bundle.js"],
+      "css": ["src/static/styling/content_scripts_styling/youtube-search-page.css"]
     }
-
+  ],
+  "browser_action": {
+    "default_icon": "icons/SpoilerShield.png",
+    "default_popup": "src/static/views/popup.html",
+    "default_title": "SpoilerShield"
   }
 
-  
-  
+}
+
+

@@ -6,7 +6,7 @@ import { LocalizationProvider, StaticDatePicker } from '@mui/x-date-pickers';
 import { ThemeProvider } from '@mui/material';
 import CustomToolbar from './custom-toolbar/custom-toolbar';
 import { customTheme } from './custom-theme/custom-theme';
-import GameScheduleFeed from '../../gamefeed';
+import GameScheduleFeed from '../../game-schedule-feed';
 import HorizontalDatePicker from '../../horizontal-date-picker';
 
 //Date calendar used as a popup

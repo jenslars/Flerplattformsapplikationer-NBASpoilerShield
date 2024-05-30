@@ -1,19 +1,19 @@
 // App.js
-// App.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Variants from './modules/mui-react-modules/skeleton/skeleton';
 import DateCalendarWithState from './modules/mui-react-modules/date-calendar/date-calendar';
-import HorizontalDatePicker from '../classes/horizontal-date-picker';
-import GameScheduleFeed from './modules/gamefeed';
+import HorizontalDatePicker from './modules/horizontal-date-picker';
+import GameScheduleFeed from './modules/game-schedule-feed';
 
-const gameScheduleCreator = new GameScheduleFeed();
+
 
 function elementToggle(element) {
   element.classList.toggle('active');
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  const gameScheduleCreator = new GameScheduleFeed();
   const mainContainer = document.getElementById('main');
   const container = document.getElementById('fetched-game-section');
 

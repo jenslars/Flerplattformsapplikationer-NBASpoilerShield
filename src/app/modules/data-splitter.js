@@ -6,7 +6,7 @@ import TimeConverter from '../api/time-converter';
 
     class DataSplitter{
     constructor(){
-        this.timeconverter = new TimeConverter
+        this.timeconverter = new TimeConverter();
     }
 
     //Splits the retrieved game data

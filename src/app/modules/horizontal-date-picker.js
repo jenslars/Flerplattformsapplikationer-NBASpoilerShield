@@ -1,4 +1,5 @@
 //Class for the horizontal date picker
+import GameScheduleFeed from "./game-schedule-feed";
 
 class HorizontalDatePicker {
     constructor() {
@@ -57,7 +58,7 @@ class HorizontalDatePicker {
     
     //Adds eventlisteners in order to retrieve dates game schedule
     addEventListeners() {
-        const gameScheduleCreator = new GameScheduleCreator();
+        const gameScheduleCreator = new GameScheduleFeed();
         document.querySelectorAll('.day-div').forEach(dayDiv => {
             dayDiv.addEventListener('click', function() {
                 document.querySelectorAll('.selected-date.active').forEach(activeDiv => {
