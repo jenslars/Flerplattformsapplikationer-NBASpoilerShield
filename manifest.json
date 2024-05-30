@@ -1,10 +1,15 @@
-{
+{ 
   "manifest_version": 2,
   "name": "Spoiler Blocker",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "jenslarsenslottis@gmail.com"
+    }
+  },
   "version": "1.0",
   "description": "Blocks spoilers on web pages.",
   "icons": {
-    "1": "icons/SpoilerShield.png"
+    "714": "icons/SpoilerShield.png"
   },
   "content_security_policy": "script-src 'self'; object-src 'self';",
   "permissions": [
