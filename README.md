@@ -22,14 +22,18 @@ To run and test the extension locally, you'll need:
 ```bash
   git clone https://github.com/jenslars/Flerplattformsapplikationer-NBASpoilerShield
   cd Flerplattformsapplikationer-NBASpoilerShield
+```
 
 2. Install dependencies:
 ```bash
   npm install
+```
 
 3. Build the extension:
 ```bash
   npm run build
+```
+
 
 4. Load the extension in Firefox:
   - Open Firefox and go to about:debugging
