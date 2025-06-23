@@ -66,13 +66,29 @@ body {
     background-image: url(../../../icons/nextIconRight.png);
 }
 
-#previous-week-button, #next-week-button{
+#previous-week-button,
+#next-week-button {
     background-size: 22px;
     height: 22px;
     width: 22px;
     background-color: unset;
     border: unset;
     margin-top: 10px;
+    transition: transform 0.1s ease, filter 0.2s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+#previous-week-button:hover,
+#next-week-button:hover {
+    filter: brightness(1.2);
+}
+
+/* Active (click) effect */
+#previous-week-button:active,
+#next-week-button:active {
+    transform: scale(0.95);
+    filter: brightness(0.9);
 }
 
 #days{
@@ -230,8 +246,9 @@ body {
 
 .game-block-section p:hover {
     text-shadow: 1px 1px 2px rgb(73, 73, 73);
-    color: #ffffff;
-    transition: 0.2s;
+    filter: brightness(1.2);
+    transition: transform 0.1s ease, filter 0.2s ease;
+    transform: scale(1.01);
 }
 
 
@@ -302,3 +319,4 @@ body {
     border-radius: 8px;
     overflow: hidden; 
 }
+

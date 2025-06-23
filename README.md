@@ -1,57 +1,92 @@
 # Flerplattformsapplikationer-NBASpoilerShield
- Repository for school project. Firefox extension that blocks potential spoilers for NBA games on YouTube.com.
 
-# Requirements to run SpoilerShield
-1. Download and install Node.js. Follow the guide found at https://nodejs.org/en
-2. Download and install Firefox from https://www.mozilla.org/en-US/firefox/.
-3. Download and install Visual Studio Code from https://code.visualstudio.com/
+> **Notice**: This repository is no longer maintained and was made way before I knew any better :^). The project is currently being refactored to react and is improved to support more sports and websites with the help of a self mantained API. The new repository is located at: [spoilershield-sports-extension](https://github.com/jenslars/spoilershield-sports-extension)
 
-# Installation Guide
-1. Download the SpoilerShield repository from GitHub (https://github.com/jenslars/Flerplattformsapplikationer-NBASpoilerShield).
-2. Open the repository in Visual Studio Code and go the the terminal, in the terminal type "npm run build" and press enter
-3. In Firefox, go to the URL field and type "about:debugging".
-4. Click on "This Firefox".
-5. Click on "Load Temporary Add-on".
-6. Select the manifest file in the downloaded folder.
-7. The extension is now installed. To test it, click on the extension icon and then again on the extension to start it.
+**SpoilerShield** is a Firefox extension built as a hobby project. It blocks potential spoilers for NBA games on YouTube.com by allowing users to select and block specific games through a popup interface.
 
-# Test Run Instructions
-1. To test the program, you need to block a game.
-2. Do this by navigating to a game via the popup interface where each day's game schedule can be retrieved.
-3. As an example, navigate to the date 2024-05-31 where a game between the Minnesota Timberwolves and the Dallas Mavericks is scheduled.
-4. Block this by pressing "BLOCK".
-5. Afterward, you need to visit https://www.youtube.com. To test the extension directly, you can instead visit the following link, which might consist of spoilers that we want to block:
-   https://www.youtube.com/results?search_query=dallas+mavericks
+---
 
-   DISCLAIMER: When the extension is newly installed, it is sometimes necessary to reload YouTube for the extension scripts to start running.
+## Getting Started
 
-# Installation Guide Svenska
-1. Ladda ner SpoilerShield-repot via Github (https://github.com/jenslars/Flerplattformsapplikationer-NBASpoilerShield)
-2. Öppna SpoileShield-mappen i Visual Studio Code och gå till terminalen. I terminalen, skriv "npm run build" och tryck på enter.
-3. I URL-fältet skriv: about:debugging
-4. Klicka på Detta Firefox. 
-5. Klicka på Ladda temporärt tillägg
-6. Välj manifest-filen i den nedladdade mappen.
-7. Nu är tillägget installerat, för att testköra det så klickar ni på ikonen för tillägg och sedan igen på tillägget för att starta den. 
+### Prerequisites
+To run and test the extension locally, you'll need:
+- [Node.js](https://nodejs.org/en)
+- [Firefox](https://www.mozilla.org/en-US/firefox/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
-# Test run instructions Svenska
-1. För att testköra programmet behöver ni blockera en match. 
-2. Det gör ni genom att navigera till en match via popup-gränsnittet där varje dags spelschema kan hämtas.
-3. Som exempel kan vi navigera till datumet 2024-05-31 där en match mellan Minnesota Timberwolves och Dallas Mavericks är schemalagd.
-4. Blockera denna genom att trycka på "BLOCK". 
-5. Därefter behöver vi besöka https://www.youtube.com. För att testa tillägget direkt kan ni istället besöka länken nedan som möjligen består av spoilers som vi vill blockera: 
-   https://www.youtube.com/results?search_query=dallas+mavericks
+---
 
-   DISCLAIMER: När tillägget nyligen installerats så krävs det ibland att man laddar om YouTube för att tilläggets scrips skall börja köras. 
+## Installation
 
-# Built With
-- React
+1. Clone this repository:
+```bash
+  git clone https://github.com/jenslars/Flerplattformsapplikationer-NBASpoilerShield
+  cd Flerplattformsapplikationer-NBASpoilerShield
+
+2. Install dependencies:
+```bash
+  npm install
+
+3. Build the extension:
+```bash
+  npm run build
+
+4. Load the extension in Firefox:
+  - Open Firefox and go to about:debugging
+  - Click "This Firefox"
+  - Click "Load Temporary Add-on"
+  - Select the manifest.json file inside the project folder
+
+## How to Use
+
+1. Click on the extension icon in the browser toolbar
+2. Browse the game schedule and choose a date (e.g., 2024-05-31)
+3. Click BLOCK on a game (e.g., Minnesota Timberwolves vs. Dallas Mavericks)
+4. Visit YouTube or search directly:
+  https://www.youtube.com/results?search_query=dallas+mavericks
+
+If the extension was just installed, you may need to refresh YouTube for it to take effect.
+
+## Installationsguide (Svenska)
+
+1. Klona detta repo:
+```bash
+  git clone https://github.com/jenslars/Flerplattformsapplikationer-NBASpoilerShield
+  cd Flerplattformsapplikationer-NBASpoilerShield
+```
+
+2. Installera beroenden:
+```bash
+  npm install
+```
+
+3. Bygg projektet:
+```bash
+  npm run build
+```
+
+4. Ladda tillägget i Firefox:
+  - Öppna Firefox och skriv about:debugging i adressfältet
+  - Klicka på "Detta Firefox"
+  - Klicka på "Ladda temporärt tillägg"
+  - Välj manifest.json-filen i projektmappen
+
+## Användning (Svenska)
+
+1. Klicka på tilläggsikonen i verktygsfältet
+2. Välj ett datum (t.ex. 2024-05-31) i popup-fönstret
+3. Tryck på BLOCK på en match (t.ex. Timberwolves mot Mavericks)
+4. Besök YouTube eller sök direkt:
+  https://www.youtube.com/results?search_query=dallas+mavericks
+
+Om tillägget nyss installerats kan det krävas att YouTube laddas om för att tilläggets skript ska börja köras.
+
+## Built With
+
 - Axios
-- Javascript
-- MUI Library
+- JavaScript
+- MUI (Material-UI)
 
-# Authors
-- Jens Larsen
+## Author
 
-# License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+Jens Larsen
